@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link href="html5/4.jpg" rel="Shortcut Icon" type="image/x-icon">
+<title>
+Nico Nico Ni
+</title>
+<style>
+body{
+  background:url("html5/73.jpg");
+
+}
+#main{
+position:relative;
+margin:auto;
+width:250px;
+height:250px;
+top:50px;
+}
+#pic1{
+background:url("html5/0.png");
+width:250px;
+height:250px;
+background-size:cover;
+position:absolute;
+top:0px;
+left:0px;
+-webkit-animation:move1 15s linear infinite; /*Safari and Chrome*/
+}
+#pic2{
+background:url("html5/1.png");
+width:250px;
+height:250px;
+background-size:cover;
+position:absolute;
+top:0px;
+left:0px;
+-webkit-animation:move2 10s linear infinite; /*Safari and Chrome*/
+}
+#pic3{
+background:url("html5/2.png");
+width:250px;
+height:250px;
+background-size:cover;
+position:absolute;
+top:0px;
+left:0px;
+-webkit-animation:move1 30s linear infinite; /*Safari and Chrome*/
+}
+#pic4{
+background:url("html5/3.png");
+width:250px;
+height:250px;
+background-size:cover;
+position:absolute;
+top:0px;
+left:0px;
+-webkit-animation:move2 20s linear infinite; /*Safari and Chrome*/
+}
+#pic5{
+border-radius:100%;
+background:url(html5/6.jpg);
+background-size:cover;
+width:166px;
+height:166px;
+position:absolute;
+top:42px;
+left:42px;
+-webkit-animation:move3 40s linear infinite; /*Safari and Chrome*/
+}
+@-webkit-keyframes move1 /*Safari and Chrome*/
+{
+from {-webkit-transform:rotate(0deg);}
+to {-webkit-transform:rotate(360deg);}
+}
+@-webkit-keyframes move2 /*Safari and Chrome*/
+{
+from {-webkit-transform:rotate(0deg);}
+to {-webkit-transform:rotate(-360deg);}
+}
+@-webkit-keyframes move3 /*Safari and Chrome*/
+{
+from {-webkit-transform:rotate(0deg);}
+to {-webkit-transform:rotate(360deg);}
+}
+ul{
+padding:0px;
+list-style:none;
+}
+li{
+padding:20px;
+float:left;
+width:150px;
+text-align: center;
+}
+#main2{
+position:relative;
+margin:auto;
+margin-top:15%;
+width:800px;
+height:50px;
+}
+a{
+color:#d3d3d3;
+background-color:transparent;
+font-weight:bold;
+text-decoration:none;
+font-size:200%;
+font-family:cursive;
+}
+</style>
+<script type="text/javascript" src="jQ/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#pic5").click(function(){
+		var musicAir=document.getElementById("air");
+		if(musicAir!=null){
+			if(!musicAir.paused){
+				musicAir.pause();
+			}else{
+				musicAir.play();
+			}	
+		}
+	});
+});
+</script>
+</head>
+<body>
+	<div id="main">
+		<div id="pic1">
+		</div>
+		<div id="pic2">
+		</div>
+		<div id="pic3">
+		</div>
+		<div id="pic4">
+		</div>
+		<div id="pic5">
+		</div>
+	</div>
+	<div id="main2">
+		<ul>
+			<li>
+				<a href="https://github.com/SecondMagic">hitHub</a>
+			</li>
+			<li>
+				<a href="http://blog.csdn.net/yeyinglingfeng">csdn</a>
+			</li>
+			<li>
+				<a>CG</a>
+			</li>
+			<li>
+				<a>My Code</a>
+			</li>
+		</ul>
+	</div>
+	<audio id="air" src="music/1.mp3" autoplay="autoplay" loop="loop">hello</audio>
+</body>
+</html>
